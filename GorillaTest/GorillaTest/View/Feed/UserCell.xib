@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="98" id="cFw-dZ-oot" customClass="UserTableViewCell" customModule="GorillaTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cFw-dZ-oot" id="OSO-5j-nMR">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8s-54-7cF">
+                        <rect key="frame" x="30" y="10" width="354" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="rNr-NM-gEM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Jane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiI-TO-IEC">
+                        <rect key="frame" x="30" y="45" width="354" height="43"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="j8s-54-7cF" firstAttribute="leading" secondItem="OSO-5j-nMR" secondAttribute="leading" constant="30" id="EaA-VI-bFv"/>
+                    <constraint firstItem="BiI-TO-IEC" firstAttribute="top" secondItem="j8s-54-7cF" secondAttribute="bottom" constant="10" id="Nem-Kn-mSe"/>
+                    <constraint firstAttribute="bottom" secondItem="BiI-TO-IEC" secondAttribute="bottom" constant="10" id="OZ1-Qi-aom"/>
+                    <constraint firstItem="j8s-54-7cF" firstAttribute="top" secondItem="OSO-5j-nMR" secondAttribute="top" constant="10" id="PJL-8h-T0a"/>
+                    <constraint firstItem="BiI-TO-IEC" firstAttribute="leading" secondItem="OSO-5j-nMR" secondAttribute="leading" constant="30" id="XGn-fz-30H"/>
+                    <constraint firstAttribute="trailing" secondItem="j8s-54-7cF" secondAttribute="trailing" constant="30" id="cDY-7E-Gs2"/>
+                    <constraint firstAttribute="trailing" secondItem="BiI-TO-IEC" secondAttribute="trailing" constant="30" id="iNW-lO-udx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLabel" destination="j8s-54-7cF" id="p5p-yW-aeT"/>
+                <outlet property="nameLabel" destination="BiI-TO-IEC" id="H9c-dh-xk3"/>
+            </connections>
+            <point key="canvasLocation" x="95.652173913043484" y="40.848214285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewPostCell" rowHeight="104" id="GRb-zb-MhQ" customClass="NewPostTableViewCell" customModule="GorillaTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GRb-zb-MhQ" id="pOA-LH-wDg">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upm-Lm-0cc">
+                        <rect key="frame" x="0.0" y="10" width="414" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's on your mind ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dS-eO-yLp">
+                                <rect key="frame" x="30" y="0.0" width="354" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="2Tb-0L-ykV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8dS-eO-yLp" secondAttribute="trailing" constant="30" id="1iT-zp-bIV"/>
+                            <constraint firstAttribute="bottom" secondItem="8dS-eO-yLp" secondAttribute="bottom" id="9HE-sV-7dh"/>
+                            <constraint firstItem="8dS-eO-yLp" firstAttribute="top" secondItem="upm-Lm-0cc" secondAttribute="top" id="MNB-DK-ZpJ"/>
+                            <constraint firstItem="8dS-eO-yLp" firstAttribute="leading" secondItem="upm-Lm-0cc" secondAttribute="leading" constant="30" id="nnY-dK-cnz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="upm-Lm-0cc" firstAttribute="centerY" secondItem="pOA-LH-wDg" secondAttribute="centerY" id="UN0-4T-y6x"/>
+                    <constraint firstItem="upm-Lm-0cc" firstAttribute="top" secondItem="pOA-LH-wDg" secondAttribute="top" constant="10" id="V0T-FL-AXK"/>
+                    <constraint firstAttribute="trailing" secondItem="upm-Lm-0cc" secondAttribute="trailing" id="b5t-Nn-StY"/>
+                    <constraint firstAttribute="bottom" secondItem="upm-Lm-0cc" secondAttribute="bottom" constant="10" id="ps5-4C-9wQ"/>
+                    <constraint firstItem="upm-Lm-0cc" firstAttribute="leading" secondItem="pOA-LH-wDg" secondAttribute="leading" id="vKT-o0-jjX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="131.8840579710145" y="173.4375"/>
+        </tableViewCell>
+    </objects>
+</document>
